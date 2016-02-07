@@ -156,7 +156,8 @@ $(document).ready(function(){
 		};
     }
     else if(localStorage.getItem("lastWeather") == "null") {
-    	lel();    	
+    	lel();
+    	console.log("eccomi");
     }
 
 	$('#invia').click(function(){
