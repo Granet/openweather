@@ -86,34 +86,29 @@ $(document).ready(function(){
 	           			$('#slide-1').attr('data-weather', 'storm');
 	           			break;
 	           		case "09d": 
-	           			$('.slide').attr('data-weather', 'drizzle');
+	           			$('#slide').attr('data-weather', 'drizzle');
 	           			break;
 	           		case "10d": 
-	           			$('.slide').attr('data-weather', 'rain');
+	           			$('#slide').attr('data-weather', 'rain');
 	   					break;
 	           		case "01d": 
 	           			$('#slide-1').attr('data-weather', 'sunny');
 	           			break;
-	           		
 	           		case "11n": 
 	           			$('#slide-1').attr('data-weather', 'storm');
 	           			break;
 	           		case "09n": 
-	           			$('.slide').attr('data-weather', 'drizzle');
-	           			location.reload();
+	           			$('#slide').attr('data-weather', 'drizzle');
 	           			break;
 	           		case "10n": 
-	           			$('.slide').attr('data-weather', 'rain');
-	           			('#tutto').load('.container');
+	           			$('#slide').attr('data-weather', 'rain');
 	   					break;
 	           		case "01n": 
-	           			console.log("ciao");
 	           			$('#slide-1').attr('data-weather', 'sunny');
-	           			('#tutto').load('.container');
 	           			break;
 	           		default:
-	           		$('#slide-1').attr('data-weather', 'sunny');
-	           		break;
+		           		$('#slide-1').attr('data-weather', 'sunny');
+		           		break;
 	           	};
 			},
 		});
@@ -132,32 +127,33 @@ $(document).ready(function(){
 
     	switch(response.weather[0].icon){
        		case "11d": 
-       			$('#slide-1').attr('data-weather', 'storm');
-       			break;
-       		case "09d": 
-       			$('.slide').attr('data-weather', 'drizzle');
-       			break;
-       		case "10d": 
-       			$('.slide').attr('data-weather', 'rain');
+   				$('#slide-1').attr('data-weather', 'storm');
+   				break;
+	   		case "09d": 
+	   			$('#slide').attr('data-weather', 'drizzle');
+	   			break;
+	   		case "10d": 
+	   			$('#slide').attr('data-weather', 'rain');
 					break;
-       		case "01d": 
-       			$('#slide-1').attr('data-weather', 'sunny');
-       			break;
-       		
-       		case "11n": 
-       			$('#slide-1').attr('data-weather', 'storm');
-       			break;
-       		case "09n": 
-       			$('.slide').attr('data-weather', 'drizzle');
-       			break;
-       		case "10n": 
-       			$('.slide').attr('data-weather', 'rain');
-					break;
-       		case "01n": 
-       			console.log("ciao");
-       			$('.slide').attr('data-weather', 'sunny');
-       			break;
-	    	
+	   		case "01d": 
+	   			$('#slide-1').attr('data-weather', 'sunny');
+	   			break;
+	   		case "11n": 
+	   			$('#slide-1').attr('data-weather', 'storm');
+	   			break;
+	   		case "09n": 
+	   			$('#slide').attr('data-weather', 'drizzle');
+	   			break;
+	   		case "10n": 
+	   			$('#slide').attr('data-weather', 'rain');
+				break;
+	   		case "01n": 
+	   			$('#slide-1').attr('data-weather', 'sunny');
+	   			break;
+	   		default:
+	   			$('#slide-1').attr('data-weather', 'sunny');
+	   			break;
+
 		};
     }
     else if(localStorage.getItem("lastWeather") == null) {
