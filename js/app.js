@@ -114,14 +114,14 @@ $(document).ready(function(){
 		});
     };
 
-    if (localStorage.getItem("lastWeather") != "null"){
-	    var response = JSON.parse(localStorage.getItem("lastWeather"));
-		$('#citta').text(response.name);
-		$('#temp').text(response.main.temp);
-		$('#descrizione').text(response.weather[0].description);
-		$('#wind').text(response.wind.speed);
-		$('#umidita').text(response.main.humidity);
-		$('#temp').append("°<small>C</small>");
+    if (localStorage.getItem("lastWeather") != null){
+	var response = JSON.parse(localStorage.getItem("lastWeather"));
+	$('#citta').text(response.name);
+	$('#temp').text(response.main.temp);
+	$('#descrizione').text(response.weather[0].description);
+	$('#wind').text(response.wind.speed);
+	$('#umidita').text(response.main.humidity);
+	$('#temp').append("°<small>C</small>");
     	$('#umidita').append("<small>%</small>");
     	$('#wind').append("<small>Km/h</small>");  
 
@@ -155,7 +155,7 @@ $(document).ready(function(){
 	    	
 		};
     }
-    else if(localStorage.getItem("lastWeather") == "null") {
+    else if(localStorage.getItem("lastWeather") == null) {
     	lel();
     	console.log("eccomi");
     }
