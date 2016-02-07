@@ -114,7 +114,7 @@ $(document).ready(function(){
 		});
     };
 
-    if (localStorage.getItem("lastWeather") != null){
+    if (localStorage.getItem("lastWeather") != "null"){
 	    var response = JSON.parse(localStorage.getItem("lastWeather"));
 		$('#citta').text(response.name);
 		$('#temp').text(response.main.temp);
