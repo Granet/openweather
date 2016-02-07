@@ -155,7 +155,7 @@ $(document).ready(function(){
 	    	
 		};
     }
-    else if {
+    else if(localStorage.getItem("lastWeather") == null) {
     	lel();    	
     }
 
