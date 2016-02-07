@@ -155,7 +155,7 @@ $(document).ready(function(){
 	    	
 		};
     }
-    else {
+    else if {
     	lel();    	
     }
 
