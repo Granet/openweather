@@ -51,14 +51,17 @@ $(document).ready(function(){
 	           			$('#slide-1').attr('data-weather', 'sunny');
 	           			('#tutto').load('.container');
 	           			break;
+	           		default:
+	           		$('#slide-1').attr('data-weather', 'sunny');
+	           		break;
 	           	};
 
 		    },
 		});
     };
 
-    function lel(){
-    		$.ajax({
+	function lel(){
+		$.ajax({
 		    url: 'http://api.openweathermap.org/data/2.5/weather',
 		    dataType: 'json',
 		    data: {
@@ -87,7 +90,7 @@ $(document).ready(function(){
 	           			break;
 	           		case "10d": 
 	           			$('.slide').attr('data-weather', 'rain');
-       					break;
+	   					break;
 	           		case "01d": 
 	           			$('#slide-1').attr('data-weather', 'sunny');
 	           			break;
@@ -102,17 +105,19 @@ $(document).ready(function(){
 	           		case "10n": 
 	           			$('.slide').attr('data-weather', 'rain');
 	           			('#tutto').load('.container');
-       					break;
+	   					break;
 	           		case "01n": 
 	           			console.log("ciao");
 	           			$('#slide-1').attr('data-weather', 'sunny');
 	           			('#tutto').load('.container');
 	           			break;
+	           		default:
+	           		$('#slide-1').attr('data-weather', 'sunny');
+	           		break;
 	           	};
-
-		    },
+			},
 		});
-    };
+	};
 
     if (localStorage.getItem("lastWeather") != null){
 	var response = JSON.parse(localStorage.getItem("lastWeather"));
