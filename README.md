@@ -19,9 +19,9 @@ WeatherNow è in fase di sviluppo e di progettazione. Si sta valutando di creare
 
 *Ideata e sviluppata da Francesco Russo aka(Granet)*
 
-[Demo](granet.github.io/weathernow)
+[Demo](http://granet.github.io/weathernow)
 
-[Source](github.com/Granet/weathernow)
+[Source](http://github.com/Granet/weathernow)
 
 __Contribuisci all'Open Source&Mind__
 
